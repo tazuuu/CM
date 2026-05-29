@@ -525,7 +525,11 @@ h3 {
   .site-nav a {
     padding: 12px;
   }
-  .about-grid,
+  .about-grid {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 40px;
+  }
   .stats-section,
   .location-section,
   .contact-section,
@@ -802,13 +806,12 @@ h3 {
   }
 
   .hero {
-    min-height: 820px;
     padding-top: 128px;
   }
 
   h1 {
-    max-width: 340px;
-    font-size: 38px;
+    max-width: none;
+    font-size: clamp(32px, 8.5vw, 38px);
     line-height: 1.04;
   }
 
